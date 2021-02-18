@@ -1,0 +1,11 @@
+jaffa/kree "sounds/kree.ogg"
+jaffa/shoot "sounds/STFIRE.mp3"
+stargate/lock "sounds/lock.mp3"
+stargate/rotate "sounds/roll.wav"
+stargate/open "sounds/open.mp3"
+goauld/kree "sounds/goauldkree.ogg"
+goauld/melee "sounds/ribbon.ogg"
+goauld/missile "sounds/push.ogg"
+
+zat/shot "sounds/zat_shot1.mp3"
+ring/go "sounds/ring_transporter.mp3"

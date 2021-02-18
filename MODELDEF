@@ -1,0 +1,10 @@
+Model Stargate
+{ 
+   Path models
+   Model 0 Stargate.obj
+   Skin 0 gatef.jpg
+   //Skin 1 gateb.jpg
+   Scale 100.0 100.0 100.0
+
+   FrameIndex JAFF A 0 0
+}

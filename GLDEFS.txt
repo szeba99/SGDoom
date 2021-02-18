@@ -1,0 +1,6 @@
+
+HardwareShader Sprite DBUSA0
+{
+	Shader "shaders/grass.fp"
+	Speed 4.0
+}

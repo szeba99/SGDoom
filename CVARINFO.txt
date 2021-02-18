@@ -1,0 +1,1 @@
+user int GrassCullingDistance = 3000;

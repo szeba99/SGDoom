@@ -1,0 +1,16 @@
+DoomEdNums
+{
+     10001 = Stargate
+	 10002 = Jaffa
+	 10003 = SerpentGuard
+	 10004 = HorusGuard
+	 10005 = DeathGlider
+	 10006 = Peasant
+	 10007 = Goauld
+}
+
+map MAP01 "Stargate"
+{
+   music = "D_RUNNIN"
+   sky1 = "OSKY47"
+}
