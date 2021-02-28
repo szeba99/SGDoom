@@ -38,6 +38,47 @@ class StaffWeapon : DoomWeapon replaces RocketLauncher
 	}
 }
 
+class Zat : DoomWeapon
+{
+	Default
+	{
+		Weapon.SelectionOrder 2500;
+		Weapon.AmmoUse 1;
+		Weapon.AmmoGive 10;
+		Weapon.AmmoType "RocketAmmo";
+		+WEAPON.NOAUTOFIRE
+		Inventory.PickupMessage "$GOTLAUNCHER";
+		Tag "$TAG_ROCKETLAUNCHER";
+	}
+	States
+	{
+	Ready:
+		ZATN A 1 A_WeaponReady;
+		Loop;
+	Deselect:
+		ZATN A 1 A_Lower;
+		Loop;
+	Select:
+		ZATN A 1 A_Raise;
+		Loop;
+	Fire:
+		ZATN ABCDE 1;
+		ZATN F 2 A_FireCustomMissile("Zatshot");
+		TNT1 A 0 A_PlaySound("zat/shot");
+		ZATN GHIJ 2;
+		ZATN J 0 A_ReFire;
+		Goto Ready;
+	Flash:
+		MISF A 3 Bright A_Light1;
+		MISF B 4 Bright;
+		MISF CD 4 Bright A_Light2;
+		Goto LightDone;
+	Spawn:
+		LAUN A -1;
+		Stop;
+	}
+}
+
 class Pew : Actor replaces Rocket
 {
 	Default
@@ -68,6 +109,68 @@ class Pew : Actor replaces Rocket
 	BrainExplode:
 		BAL1 CD 10 Bright;
 		BAL1 E 10 A_BrainExplode;
+		Stop;
+	}
+}
+
+class ZatShot : FastProjectile
+{
+	Default
+	{
+		MissileHeight 8;
+		MissileType "ZatTrail";
+		XScale 0.5;
+		YScale 0.5;
+		Radius 11;
+		Height 8;
+		Speed 55;
+		Damage 15;
+		Projectile;
+		+RANDOMIZE
+		+ZDOOMTRANS
+		RenderStyle "Add";
+		//SeeSound "jaffa/shoot";
+		DeathSound "imp/shotx";
+		Obituary "$OB_MPROCKET";
+	}
+	States
+	{
+	Spawn:
+		PEWZ A 1 Bright;
+		Loop;
+	Death:
+		BAL1 C 2 Bright;
+		BAL1 D 2 Bright;
+		BAL1 E 2 Bright;
+		Stop;
+	BrainExplode:
+		BAL1 CD 10 Bright;
+		BAL1 E 10 A_BrainExplode;
+		Stop;
+	}
+}
+
+class ZatTrail : Actor
+{
+	Default
+	{
+		MissileHeight 8;
+		MissileType "ZatTrail";
+		XScale 0.25;
+		YScale 0.25;
+		Radius 11;
+		Height 8;
+		RenderStyle "Add";
+		Speed 0;;
+		Damage 0;
+		Projectile;
+		+RANDOMIZE
+		+ZDOOMTRANS
+	}
+	States
+	{
+	Spawn:
+		PEWZ AAAAAAAAAAAAAAAAAAAAA 1 Bright A_FadeOut(0.2);
 		Stop;
 	}
 }

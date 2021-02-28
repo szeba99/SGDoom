@@ -61,6 +61,67 @@ class Jaffa : DoomImp
 	}
 }
 
+class ZatJaffa : DoomImp
+{
+	Default
+	{
+		XScale 0.8;
+		YScale 0.64;
+		Health 60;
+		Radius 20;
+		Height 56;
+		Mass 100;
+		Speed 8;
+		PainChance 200;
+		Monster;
+		+FLOORCLIP
+		SeeSound "jaffa/kree";
+		PainSound "imp/pain";
+		DeathSound "imp/death";
+		ActiveSound "jaffa/kree";
+		HitObituary "$OB_IMPHIT";
+		Obituary "$OB_IMP";
+		Tag "$FN_IMP";
+	}
+	States
+	{
+	Spawn:
+		JAFF AA 10 A_Look;
+		Loop;
+	See:
+		JAFF AABBAABB 3 A_Chase;
+		Loop;
+	Melee:
+	Missile:
+		JAFF AA 8 A_FaceTarget;
+		JAFF A 1 A_PlaySound("zat/shot");
+		JAFF C 6 A_CustomComboAttack("ZatShot", 32, 3 * random(1, 8), "imp/melee");
+		Goto See;
+	Pain:
+		JAFF B 2;
+		JAFF B 2 A_Pain;
+		Goto See;
+	Death:
+		JAFF D 8;
+		JAFF D 8 A_Scream;
+		JAFF E 6;
+		JAFF E 6 A_NoBlocking;
+		JAFF E -1;
+		Stop;
+	XDeath:
+		TROO N 5;
+		TROO O 5 A_XScream;
+		TROO P 5;
+		TROO Q 5 A_NoBlocking;
+		TROO RST 5;
+		TROO U -1;
+		Stop;
+	Raise:
+		JAFF EE 8;
+		JAFF DDD 6;
+		Goto See;
+	}
+}
 //===========================================================================
 //
 // Imp fireball
