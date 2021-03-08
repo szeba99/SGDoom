@@ -8,3 +8,46 @@ Model Stargate
 
    FrameIndex JAFF A 0 0
 }
+
+
+Model hatak 
+{
+Path models/
+Model 0 hatak.md3
+Skin 0 hatak.png
+Scale 10000 10000 10000
+Offset 0 0 0
+AngleOffset 0
+
+FrameIndex HATA A 0 0 
+
+}
+
+
+Model hataksmall 
+{
+Path models/
+Model 0 hatak.md3
+Skin 0 hatak.png
+Scale 200 200 200
+Offset 0 0 0
+AngleOffset 0
+
+FrameIndex HATA A 0 0 
+
+}
+
+Model daedalus
+{
+Path models/
+Model 0 daedalus.md3
+Skin 0 daedalus.png
+Scale 10 10 10
+Offset 0 0 0
+AngleOffset 0
+
+FrameIndex 0000 A 0 0 
+
+}
+
+    

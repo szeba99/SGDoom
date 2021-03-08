@@ -1,0 +1,125 @@
+
+ACTOR P90Clip : ammo 
+{ 
+//$Category Ammunition 
+Inventory.MaxAmount 50 
+Inventory.Icon "CLIPA0" 
+
++IGNORESKILL
+
+	States 
+	{
+	Spawn: CLIP A -1 
+	Stop 
+	} 
+	
+}
+
+
+
+
+Actor P90 : weapon replaces Chaingun 2002
+{
+
+	Weapon.selectionorder 50
+	Weapon.AmmoUse 1
+	Weapon.AmmoGive 50
+	Weapon.AmmoType "P90Clip"
+	Weapon.AmmoType2 "Clip"
+	+WEAPON.AMMO_OPTIONAL
+	Inventory.PickupSound "Weapons/clipin"
+	Inventory.PickupMessage "Got the P90!"
+
+	
+		States
+		{
+			Spawn:
+			PNIP A -1
+			stop
+			
+			Select:
+			TNT1 AA 0 A_Raise (32)
+			TNT1 A 0 A_Raise
+			TNT1 A 0 A_PlaySound("weapons/bolt")
+			PNID ABCDEFGH 3
+			goto ready
+			
+			Deselect:
+			PNIF A 1 A_Lower
+			loop
+			
+			Ready:
+			PNIF A 1 A_WeaponReady(WRF_ALLOWRELOAD)
+			loop
+			
+			Fire:			
+			TNT1 A 0 A_JumpIfNoAmmo("Reload")
+			PNIF A 1 
+			PNIF A 0  A_PlaySound("weapons/P90Fire")
+			TNT1 A 0 A_ZoomFactor(0.99)
+			TNT1 A 0 A_SetPitch(-1.2 + pitch)
+			PNIF A 1 
+			PNIF B 1 BRIGHT A_FireBullets (3.6, 0, 1, 15, "BulletPuff")
+			PNIF A 0 A_ReFire
+			goto ready
+			
+			AltFire:
+			TNT1 A 0 A_JumpIfInventory("P90Clip", 1,1)
+			Goto reload
+			TNT1 A 0 A_TakeInventory("P90Clip",1)
+			PNIF A 0 A_PlaySound("weapons/P90Fire")
+			TNT1 A 0 A_ZoomFactor(0.99)
+			TNT1 A 0 A_SetPitch(-1.2 + pitch)
+			PNIF A 1 
+			PNIF B 2 BRIGHT A_FireBullets (3.6, 0, 1, 15, "BulletPuff")
+			TNT1 A 0 A_JumpIfInventory("P90Clip", 1,1)
+			Goto reload
+			TNT1 A 0 A_TakeInventory("P90Clip",1)
+			PNIF A 0 A_PlaySound("weapons/P90Fire")
+			TNT1 A 0 A_ZoomFactor(0.99)
+			TNT1 A 0 A_SetPitch(-1.2 + pitch)
+			PNIF A 1 
+			PNIF B 2 BRIGHT A_FireBullets (3.6, 0, 1, 15, "BulletPuff")
+			TNT1 A 0 A_JumpIfInventory("P90Clip", 1,1)
+			Goto reload
+			TNT1 A 0 A_TakeInventory("P90Clip",1)
+			PNIF A 0 A_PlaySound("weapons/P90Fire")
+			TNT1 A 0 A_ZoomFactor(0.99)
+			TNT1 A 0 A_SetPitch(-1.2 + pitch)
+			PNIF A 1 
+			PNIF B 2 BRIGHT A_FireBullets (3.6, 0, 1, 15, "BulletPuff")
+			PNIF AAA 2	
+			
+			Goto ready
+			
+			
+			Reload:
+			PNIR A 2 A_PlaySound("weapons/release") 
+			PNIR BCD 2
+			PNIR E 2 A_PlaySound("weapons/clipout") 
+			PNIR F 2 A_PlaySound("weapons/clipin")
+			PNIR GHHIIIKLM 2  			
+			PNIR NNN 2  
+			TNT1 A 0 A_JumpIfInventory("Clip",1,1)
+			Goto InsertMagazine //Skipped if we have ammo in our ammo pool
+			
+			
+          
+            
+			FillMagazine:
+			TNT1 A 0 A_JumpIfInventory("Clip",1,1)
+            Goto InsertMagazine //Skipped if we have ammo in our ammo pool
+           
+		    TNT1 A 0 A_TakeInventory("Clip",1)
+            TNT1 A 0 A_GiveInventory("p90clip",1)
+            TNT1 A 0 A_JumpIfInventory("p90clip",0,1)
+            Goto FillMagazine
+            
+			InsertMagazine:			
+            PNIR OOPP 2 
+            goto ready
+			
+			
+		}
+}
+

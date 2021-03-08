@@ -7,6 +7,17 @@ DoomEdNums
 	 10005 = DeathGlider
 	 10006 = Peasant
 	 10007 = Goauld
+	 10008 = REPL
+	 10009 = REPL_MEDIUM
+	 10010 = REPL_MAMA
+	 10011 = ZatJaffa
+	 10012 = REPL_CEILING
+	 10013 = Zat
+	 10014 = StaffWeapon
+	 10015 = hatak
+	 10016 = hataksmall
+	 //10008 = 
+	 
 }
 
 map MAP01 "Stargate"

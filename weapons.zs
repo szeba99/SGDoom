@@ -8,7 +8,7 @@ class StaffWeapon : DoomWeapon replaces RocketLauncher
 		Weapon.AmmoType "RocketAmmo";
 		+WEAPON.NOAUTOFIRE
 		Inventory.PickupMessage "$GOTLAUNCHER";
-		Tag "$TAG_ROCKETLAUNCHER";
+		Tag "Staff Weapon";
 	}
 	States
 	{
@@ -23,8 +23,15 @@ class StaffWeapon : DoomWeapon replaces RocketLauncher
 		Loop;
 	Fire:
 		STAF IABCD 1;
+		TNT1 A 0 A_Playsound("jaffa/Shoot");
+		TNT1 A 0 A_ZoomFactor(1.01) ;
+		TNT1 A 0 A_SetPitch(pitch-1);
+		TNT1 A 0 A_Recoil(1);
 		STAF E 2 A_FireMissile;
-		STAF GHI 2;
+		STAF G 1 A_ZoomFactor(1.02) ;
+		STAF H 1 A_ZoomFactor(1.03) ;
+		STAF I 1 A_ZoomFactor(1.02) ;
+		TNT1 A 0 A_ZoomFactor(1.00);
 		STAF I 0 A_ReFire;
 		Goto Ready;
 	Flash:
@@ -33,7 +40,7 @@ class StaffWeapon : DoomWeapon replaces RocketLauncher
 		MISF CD 4 Bright A_Light2;
 		Goto LightDone;
 	Spawn:
-		LAUN A -1;
+		STAP A -1;
 		Stop;
 	}
 }
@@ -48,25 +55,28 @@ class Zat : DoomWeapon
 		Weapon.AmmoType "RocketAmmo";
 		+WEAPON.NOAUTOFIRE
 		Inventory.PickupMessage "$GOTLAUNCHER";
-		Tag "$TAG_ROCKETLAUNCHER";
+		Tag "Zat Nik Tel";
 	}
 	States
 	{
 	Ready:
-		ZATN A 1 A_WeaponReady;
+		ZATW A 1 A_WeaponReady;
 		Loop;
 	Deselect:
-		ZATN A 1 A_Lower;
+		ZATW A 1 A_Lower;
 		Loop;
 	Select:
-		ZATN A 1 A_Raise;
+		ZATW A 1 A_Raise;
 		Loop;
 	Fire:
-		ZATN ABCDE 1;
-		ZATN F 2 A_FireCustomMissile("Zatshot");
 		TNT1 A 0 A_PlaySound("zat/shot");
-		ZATN GHIJ 2;
-		ZATN J 0 A_ReFire;
+		ZATW BCD 1		;
+		ZATW EF 1 BRIGHT ;
+		ZATW ED 1 BRIGHT;
+		ZATW E 1 BRIGHT A_FireCustomMissile("Zatshot");
+		ZATW F 1;
+		ZATW CBAAAAAAAAAAAAAAAA 1;
+		ZATW A 0 A_ReFire;
 		Goto Ready;
 	Flash:
 		MISF A 3 Bright A_Light1;
@@ -74,7 +84,7 @@ class Zat : DoomWeapon
 		MISF CD 4 Bright A_Light2;
 		Goto LightDone;
 	Spawn:
-		LAUN A -1;
+		ZATP A -1;
 		Stop;
 	}
 }
@@ -95,6 +105,7 @@ class Pew : Actor replaces Rocket
 		SeeSound "jaffa/shoot";
 		DeathSound "imp/shotx";
 		Obituary "$OB_MPROCKET";
+		RenderStyle "Add";
 	}
 	States
 	{
@@ -139,9 +150,7 @@ class ZatShot : FastProjectile
 		PEWZ A 1 Bright;
 		Loop;
 	Death:
-		BAL1 C 2 Bright;
-		BAL1 D 2 Bright;
-		BAL1 E 2 Bright;
+		ELEC ABCDEFGHABCD 2 Bright;
 		Stop;
 	BrainExplode:
 		BAL1 CD 10 Bright;
@@ -175,7 +184,7 @@ class ZatTrail : Actor
 	}
 }
 
-class P90 : DoomWeapon replaces Chaingun
+/*class P90 : DoomWeapon replaces Chaingun
 {
 	Default
 	{
@@ -205,13 +214,13 @@ class P90 : DoomWeapon replaces Chaingun
 		//W30D BCDEFGHIJKLMNOPQRSTUVWXYZ 1;
 		W30D Z 0 A_ReFire;
 		Goto Ready;
-	/*Flash:
+	//Flash:
 		CHGF A 5 Bright A_Light1;
 		Goto LightDone;
 		CHGF B 5 Bright A_Light2;
-		Goto LightDone;*/
+		Goto LightDone;// comment this line
 	Spawn:
 		MGUN A -1;
 		Stop;
 	}
-}
+} */

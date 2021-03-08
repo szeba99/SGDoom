@@ -1,0 +1,57 @@
+ACTOR Wraith2 11001
+
+{
+  Health 100
+  Radius 20
+  Height 65
+  Speed 8
+  scale 1.2
+  PainChance 200
+  Monster
+  +FLOORCLIP
+  SeeSound "grunt/sight"
+  AttackSound "grunt/attack"
+  PainSound "grunt/pain"
+  DeathSound "grunt/death"
+  ActiveSound "grunt/active"
+  Obituary "$OB_ZOMBIE" // "%o was killed by a zombieman."
+  DropItem "Clip"
+  States
+  {
+  Spawn:
+    WRAT A 5 A_Look
+    Loop
+  See:
+    WRAT AABBBCCBBB 3 A_Chase
+    Loop
+  Missile:
+    WRAT E 10 A_FaceTarget
+    WRAT F 8 BRIGHT A_BspiAttack
+    WRAT E 8
+    Goto See
+  Pain:
+    WRAT G 3
+    WRAT G 3 A_Pain
+    Goto See
+  Death:
+    WRAT H 5
+    WRAT I 5 A_Scream
+    WRAT J 5 A_NoBlocking
+    WRAT K 3
+    WRAT L 3
+	WRAT M 3
+	WRAT N -1
+    Stop
+  XDeath:
+    WRAT M 5
+    WRAT N 5 A_XScream
+    WRAT O 5 A_NoBlocking
+    WRAT O 5
+    WRAT U -1
+    Stop
+  Raise:
+    WRAT K 5
+    WRAT JIH 5
+    Goto See
+  }
+}

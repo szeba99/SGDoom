@@ -1,4 +1,6 @@
 #include "weapons.zs"
+#include "decoration.zs"
+#include "enemies.zs"
 
 class Jaffa : DoomImp
 {
@@ -15,7 +17,7 @@ class Jaffa : DoomImp
 		Monster;
 		+FLOORCLIP
 		SeeSound "jaffa/kree";
-		PainSound "imp/pain";
+		PainSound "impact";
 		DeathSound "imp/death";
 		ActiveSound "jaffa/kree";
 		HitObituary "$OB_IMPHIT";
@@ -76,7 +78,7 @@ class ZatJaffa : DoomImp
 		Monster;
 		+FLOORCLIP
 		SeeSound "jaffa/kree";
-		PainSound "imp/pain";
+		PainSound "impact";
 		DeathSound "imp/death";
 		ActiveSound "jaffa/kree";
 		HitObituary "$OB_IMPHIT";
@@ -259,7 +261,7 @@ class SerpentGuard : DoomImp
 		Monster;
 		+FLOORCLIP
 		SeeSound "jaffa/kree";
-		PainSound "imp/pain";
+		PainSound "impact";
 		DeathSound "imp/death";
 		ActiveSound "jaffa/kree";
 		HitObituary "$OB_IMPHIT";
@@ -320,7 +322,7 @@ class HorusGuard : DoomImp
 		Monster;
 		+FLOORCLIP
 		SeeSound "jaffa/kree";
-		PainSound "imp/pain";
+		PainSound "impact";
 		DeathSound "imp/death";
 		ActiveSound "jaffa/kree";
 		HitObituary "$OB_IMPHIT";
@@ -381,7 +383,7 @@ class DeathGlider : Cacodemon
 		Monster;
 		+FLOAT +NOGRAVITY +NOBLOOD
 		SeeSound "caco/sight";
-		PainSound "caco/pain";
+		PainSound "impact";
 		DeathSound "caco/death";
 		ActiveSound "caco/active";
 		Obituary "$OB_CACO";

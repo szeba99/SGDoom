@@ -4,3 +4,36 @@ HardwareShader Sprite DBUSA0
 	Shader "shaders/grass.fp"
 	Speed 4.0
 }
+
+flickerlight YellowOne
+{
+    color 0.9 0.8 0.0
+    size 144
+    secondarySize 156
+    chance 0.25
+	attenuate 1
+}
+
+flickerlight BlueOne
+{
+    color 0.0 0.2 0.8
+    size 144
+    secondarySize 156
+    chance 0.25
+	attenuate 1
+}
+
+object Pew
+{
+    frame PEWW { light YellowOne    }
+}
+
+object StaffBall
+{
+    frame PEWW { light YellowOne    }
+}
+
+object ZatShot
+{
+    frame PEWZ { light BlueOne    }
+}

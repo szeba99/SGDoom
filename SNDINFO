@@ -7,5 +7,25 @@ goauld/kree "sounds/goauldkree.ogg"
 goauld/melee "sounds/ribbon.ogg"
 goauld/missile "sounds/push.ogg"
 
+weapons/clipout  		CLIPOUT
+weapons/clipin			CLIPIN
+weapons/clipempt        CLIPEMPT  
+weapons/p90fire			P90FIRE	
+weapons/release         CLPRELEA
+weapons/bolt			P90_BOLT
+
 zat/shot "sounds/zat_shot1.mp3"
 ring/go "sounds/ring_transporter.mp3"
+
+$random impact { impact/impact1 impact/impact2 impact/impact3 }
+
+repli/repli "sounds/repli.ogg"
+impact/impact1 "sounds/impact1.ogg"
+impact/impact2 "sounds/impact2.ogg"
+impact/impact3 "sounds/impact3.ogg"
+
+$volume weapons/pistol 0.3
+$volume weapons/chngun 0.3
+$volume zat/shot 0.4
+$volume jaffa/shoot 0.2
+$volume weapons/p90fire 0.3
