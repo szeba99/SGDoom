@@ -24,6 +24,11 @@ impact/impact1 "sounds/impact1.ogg"
 impact/impact2 "sounds/impact2.ogg"
 impact/impact3 "sounds/impact3.ogg"
 
+sgc/alarm "sounds/sgcalarm.wav"
+
+iris/open "sounds/irisopen.mp3"
+iris/close "sounds/irisclose.mp3"
+
 $volume weapons/pistol 0.3
 $volume weapons/chngun 0.3
 $volume zat/shot 0.4

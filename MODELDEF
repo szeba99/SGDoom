@@ -6,7 +6,7 @@ Model Stargate
    //Skin 1 gateb.jpg
    Scale 100.0 100.0 100.0
 
-   FrameIndex JAFF A 0 0
+   FrameIndex SGC0 A 0 0
 }
 
 

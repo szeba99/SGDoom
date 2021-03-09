@@ -241,7 +241,7 @@ class Stargate : Stalagtite
 	States
 	{
 	Spawn:
-		JAFF A -1;
+		SGC0 A -1;
 		Stop;
 	}
 }
@@ -525,5 +525,47 @@ class desertbush1 : Actor
 	Spawn:
 		DBUS A -1;
 		Stop;
+	}
+}
+
+class Stargate2 : Stalagtite
+{
+	Default
+	{
+		Radius 10;
+		Height 10;
+	}
+	States
+	{
+	Spawn:
+		SGC0 A 20;
+		//Stop;
+	FastDialing:
+		SGC0 A 20;
+		SGC1 A 20;
+		SGC2 A 20;
+		SGC3 A 20;
+		SGC4 A 20;
+		SGC5 A 20;
+		SGC6 A 20;
+		SGC7 A 20;
+		Goto Spawn;
+	SlowDialing:
+		SGC0 A 20;
+		SGCH A 15;
+		SGC1 A 20;
+		SGCH A 15;
+		SGC2 A 20;
+		SGCH A 15;
+		SGC3 A 20;
+		SGCH A 15;
+		SGC4 A 20;
+		SGCH A 15;
+		SGC5 A 20;
+		SGCH A 15;
+		SGC6 A 20;
+		SGCH A 15;
+		SGC7 A 20;
+		Goto Spawn;
 	}
 }

@@ -1,0 +1,185 @@
+Model kawoosh
+{
+	Path models/
+    Model 0 "kawoosh.md3"
+	Skin 0 "kawoosh.png"
+    Scale 75.000000 75.000000 75.200000
+	AngleOffset 180
+    USEACTORPITCH
+    USEACTORROLL
+
+    FrameIndex 0000 A 0 0
+    FrameIndex 0000 B 0 1
+    FrameIndex 0000 C 0 2
+    FrameIndex 0000 D 0 3
+    FrameIndex 0000 E 0 4
+    FrameIndex 0000 F 0 5
+    FrameIndex 0000 G 0 6
+    FrameIndex 0000 H 0 7
+    FrameIndex 0000 I 0 8
+    FrameIndex 0000 J 0 9
+    FrameIndex 0000 K 0 10
+    FrameIndex 0000 L 0 11
+    FrameIndex 0000 M 0 12
+    FrameIndex 0000 N 0 13
+    FrameIndex 0000 O 0 14
+    FrameIndex 0000 P 0 15
+    FrameIndex 0000 Q 0 16
+    FrameIndex 0000 R 0 17
+    FrameIndex 0000 S 0 18
+    FrameIndex 0000 T 0 19
+    FrameIndex 0000 U 0 20
+    FrameIndex 0000 V 0 21
+    FrameIndex 0000 W 0 22
+    FrameIndex 0000 X 0 23
+    FrameIndex 0000 Y 0 24
+    FrameIndex 0000 Z 0 25
+    FrameIndex 0000 [ 0 26
+    FrameIndex 0000 \ 0 27
+    FrameIndex 0000 ] 0 28
+    FrameIndex 000_ A 0 29
+    FrameIndex 000_ B 0 30
+    FrameIndex 000_ C 0 31
+    FrameIndex 000_ D 0 32
+    FrameIndex 000_ E 0 33
+    FrameIndex 000_ F 0 34
+    FrameIndex 000_ G 0 35
+    FrameIndex 000_ H 0 36
+    FrameIndex 000_ I 0 37
+    FrameIndex 000_ J 0 38
+    FrameIndex 000_ K 0 39
+    FrameIndex 000_ L 0 40
+    FrameIndex 000_ M 0 41
+    FrameIndex 000_ N 0 42
+    FrameIndex 000_ O 0 43
+    FrameIndex 000_ P 0 44
+    FrameIndex 000_ Q 0 45
+    FrameIndex 000_ R 0 46
+    FrameIndex 000_ S 0 47
+    FrameIndex 000_ T 0 48
+    FrameIndex 000_ U 0 49
+    FrameIndex 000_ V 0 50
+    FrameIndex 000_ W 0 51
+    FrameIndex 000_ X 0 52
+    FrameIndex 000_ Y 0 53
+    FrameIndex 000_ Z 0 54
+    FrameIndex 000_ [ 0 55
+    FrameIndex 000_ \ 0 56
+    FrameIndex 000_ ] 0 57
+    FrameIndex 00_A A 0 58
+    FrameIndex 00_A B 0 59
+    FrameIndex 00_A C 0 60
+    FrameIndex 00_A D 0 61
+    FrameIndex 00_A E 0 62
+    FrameIndex 00_A F 0 63
+    FrameIndex 00_A G 0 64
+    FrameIndex 00_A H 0 65
+    FrameIndex 00_A I 0 66
+    FrameIndex 00_A J 0 67
+    FrameIndex 00_A K 0 68
+    FrameIndex 00_A L 0 69
+    FrameIndex 00_A M 0 70
+    FrameIndex 00_A N 0 71
+    FrameIndex 00_A O 0 72
+    FrameIndex 00_A P 0 73
+    FrameIndex 00_A Q 0 74
+    FrameIndex 00_A R 0 75
+    FrameIndex 00_A S 0 76
+    FrameIndex 00_A T 0 77
+    FrameIndex 00_A U 0 78
+    FrameIndex 00_A V 0 79
+    FrameIndex 00_A W 0 80
+}
+
+Model kawoosh2
+{
+	Path models/
+    Model 0 "kawoosh.md3"
+	Skin 0 "kawoosh.png"
+    Scale 80.000000 80.000000 80.200000
+	AngleOffset 180
+    USEACTORPITCH
+    USEACTORROLL
+
+    FrameIndex 0000 A 0 0
+    FrameIndex 0000 B 0 1
+    FrameIndex 0000 C 0 2
+    FrameIndex 0000 D 0 3
+    FrameIndex 0000 E 0 4
+    FrameIndex 0000 F 0 5
+    FrameIndex 0000 G 0 6
+    FrameIndex 0000 H 0 7
+    FrameIndex 0000 I 0 8
+    FrameIndex 0000 J 0 9
+    FrameIndex 0000 K 0 10
+    FrameIndex 0000 L 0 11
+    FrameIndex 0000 M 0 12
+    FrameIndex 0000 N 0 13
+    FrameIndex 0000 O 0 14
+    FrameIndex 0000 P 0 15
+    FrameIndex 0000 Q 0 16
+    FrameIndex 0000 R 0 17
+    FrameIndex 0000 S 0 18
+    FrameIndex 0000 T 0 19
+    FrameIndex 0000 U 0 20
+    FrameIndex 0000 V 0 21
+    FrameIndex 0000 W 0 22
+    FrameIndex 0000 X 0 23
+    FrameIndex 0000 Y 0 24
+    FrameIndex 0000 Z 0 25
+    FrameIndex 0000 [ 0 26
+    FrameIndex 0000 \ 0 27
+    FrameIndex 0000 ] 0 28
+    FrameIndex 000_ A 0 29
+    FrameIndex 000_ B 0 30
+    FrameIndex 000_ C 0 31
+    FrameIndex 000_ D 0 32
+    FrameIndex 000_ E 0 33
+    FrameIndex 000_ F 0 34
+    FrameIndex 000_ G 0 35
+    FrameIndex 000_ H 0 36
+    FrameIndex 000_ I 0 37
+    FrameIndex 000_ J 0 38
+    FrameIndex 000_ K 0 39
+    FrameIndex 000_ L 0 40
+    FrameIndex 000_ M 0 41
+    FrameIndex 000_ N 0 42
+    FrameIndex 000_ O 0 43
+    FrameIndex 000_ P 0 44
+    FrameIndex 000_ Q 0 45
+    FrameIndex 000_ R 0 46
+    FrameIndex 000_ S 0 47
+    FrameIndex 000_ T 0 48
+    FrameIndex 000_ U 0 49
+    FrameIndex 000_ V 0 50
+    FrameIndex 000_ W 0 51
+    FrameIndex 000_ X 0 52
+    FrameIndex 000_ Y 0 53
+    FrameIndex 000_ Z 0 54
+    FrameIndex 000_ [ 0 55
+    FrameIndex 000_ \ 0 56
+    FrameIndex 000_ ] 0 57
+    FrameIndex 00_A A 0 58
+    FrameIndex 00_A B 0 59
+    FrameIndex 00_A C 0 60
+    FrameIndex 00_A D 0 61
+    FrameIndex 00_A E 0 62
+    FrameIndex 00_A F 0 63
+    FrameIndex 00_A G 0 64
+    FrameIndex 00_A H 0 65
+    FrameIndex 00_A I 0 66
+    FrameIndex 00_A J 0 67
+    FrameIndex 00_A K 0 68
+    FrameIndex 00_A L 0 69
+    FrameIndex 00_A M 0 70
+    FrameIndex 00_A N 0 71
+    FrameIndex 00_A O 0 72
+    FrameIndex 00_A P 0 73
+    FrameIndex 00_A Q 0 74
+    FrameIndex 00_A R 0 75
+    FrameIndex 00_A S 0 76
+    FrameIndex 00_A T 0 77
+    FrameIndex 00_A U 0 78
+    FrameIndex 00_A V 0 79
+    FrameIndex 00_A W 0 80
+}
