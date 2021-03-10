@@ -16,12 +16,61 @@ DoomEdNums
 	 10014 = StaffWeapon
 	 10015 = hatak
 	 10016 = hataksmall
+	 10017 = daedalus
 	 //10008 = 
 	 
 }
 
-map MAP01 "Stargate"
+/*
+clearepisodes
+
+episode MAP01
+{
+   picname = "M_EPI1"
+   key = "k"
+}*/
+
+cluster 1 
+{
+	hub
+	flat = OSKY36
+	music = ANUBIS
+ 	exittext = 
+ 	"In the farthest reaches, a Light",
+	"awoke, and cast his luminous rays",
+	"on all around him.",
+	" ",
+	"He fashioned a world unto his image,",
+	"created beasts of his will, and declared",
+	"himself eternal, ruler of his domain.",
+	" ",
+	"But his hubris cast a sickness, and",
+	"from distant worlds called forth ",
+	"the agent of retribution, drawn ",
+	"through the cosmos by his pride.  ",
+	" ",
+	"It cast down his beasts, it rejected ",
+	"his rule, and through lands eternal ",
+	"it brought forth his doom."
+}
+
+map MAP01 "Stargate Command"
 {
    music = "D_RUNNIN"
    sky1 = "OSKY47"
+   cluster = 1
+}
+
+map MAP02 "P3PX9"
+{
+   music = "D_RUNNIN"
+   sky1 = "OSKY47"
+   cluster = 1
+}
+
+map MAP03 "Captured Daedalus"
+{
+   music = "HORUS"
+   sky1 = "sky1"
+   cluster = 1
 }

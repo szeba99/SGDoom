@@ -1,0 +1,139 @@
+type = "Doom Builder Map Settings Configuration";
+gameconfig = "GZDoom_DoomUDMF.cfg";
+strictpatches = 0;
+
+maps
+{
+	
+	MAP01
+	{
+		defaultwalltexture = "OBASEL37";
+		overridemiddletexture = false;
+		defaultceiltexture = "METAL2";
+		overrideceiltexture = false;
+		custombrightness = 196;
+		scriptcompiler = "zdoom_acs.cfg";
+		
+		resources
+		{
+			
+			resource0
+			{
+				type = 1;
+				location = "D:\\Games\\Doom\\SGDoom";
+				option1 = 0;
+				option2 = 0;
+				notfortesting = 0;
+			}
+			
+			resource1
+			{
+				type = 0;
+				location = "D:\\Games\\Doom\\Doom2.wad";
+				option1 = 0;
+				option2 = 0;
+				notfortesting = 0;
+			}
+			
+			resource2
+			{
+				type = 2;
+				location = "D:\\Games\\Doom\\GZDoom\\gzdoom.pk3";
+				option1 = 0;
+				option2 = 0;
+				notfortesting = 1;
+			}
+		}
+		viewpositiony = 724.0285f;
+		viewpositionx = 19.79448f;
+		customceilheight = 128;
+		customfloorheight = 0;
+		
+		grid
+		{
+			backoffsetx = 0;
+			backsource = 0;
+			gridoriginy = 0;
+			backscaley = 100;
+			gridrotate = 0;
+			backscalex = 100;
+			gridoriginx = 0;
+			gridsize = 32;
+			background = "";
+			backoffsety = 0;
+		}
+		viewscale = 1.451662f;
+		defaulttoptexture = "OBASEL37";
+		overridebottomtexture = false;
+		useresourcesinreadonlymode = false;
+		defaultbottomtexture = "OBASEL37";
+		defaultfloortexture = "OBASEA00";
+		overrideceilheight = false;
+		overridebrightness = false;
+		overridefloorheight = false;
+		overridetoptexture = false;
+		uselongtexturenames = false;
+		overridefloortexture = false;
+		
+		fieldtypes
+		{
+			
+			sidedef
+			{
+				offsetx_mid = 1;
+				offsety_mid = 1;
+				scalex_mid = 1;
+				scaley_mid = 1;
+				offsetx_top = 1;
+				offsety_top = 1;
+				offsetx_bottom = 1;
+				offsety_bottom = 1;
+			}
+			
+			sector
+			{
+				color_floor = 0;
+				xpanningceiling = 1;
+				ypanningceiling = 1;
+				rotationceiling = 1;
+				xscaleceiling = 1;
+				yscaleceiling = 1;
+				xpanningfloor = 1;
+				ypanningfloor = 1;
+				rotationfloor = 1;
+				xscalefloor = 1;
+				yscalefloor = 1;
+			}
+			
+			thing
+			{
+				fillcolor = 0;
+			}
+		}
+		
+		scriptdocuments
+		{
+			
+			document0
+			{
+				filename = "SCRIPTS";
+				hash = 3469170009;
+				resource;
+				tabtype = 0;
+				scripttype = 1;
+				caretposition = 6578;
+				firstvisibleline = 276;
+				activetab = true;
+			}
+			
+			document1
+			{
+				filename = "DIALOGUE";
+				hash = 3588187714;
+				resource;
+				tabtype = 0;
+				scripttype = 18;
+			}
+		}
+	}
+}

@@ -1,0 +1,118 @@
+type = "Doom Builder Map Settings Configuration";
+gameconfig = "GZDoom_DoomUDMF.cfg";
+strictpatches = 0;
+
+maps
+{
+	
+	MAP02
+	{
+		defaultceiltexture = "FLOOR4_8";
+		overridefloorheight = false;
+		customfloorheight = 0;
+		uselongtexturenames = false;
+		scriptcompiler = "zdoom_acs.cfg";
+		
+		resources
+		{
+			
+			resource0
+			{
+				type = 2;
+				location = "D:\\Games\\Doom\\GZDoom\\gzdoom.pk3";
+				option1 = 0;
+				option2 = 0;
+				notfortesting = 1;
+			}
+			
+			resource1
+			{
+				type = 1;
+				location = "D:\\Games\\Doom\\SGDoom";
+				option1 = 0;
+				option2 = 0;
+				notfortesting = 0;
+			}
+			
+			resource2
+			{
+				type = 0;
+				location = "D:\\Games\\Doom\\Doom2.wad";
+				option1 = 0;
+				option2 = 0;
+				notfortesting = 0;
+			}
+		}
+		overrideceiltexture = false;
+		viewpositionx = -15534.04f;
+		defaulttoptexture = "OBASEL33";
+		
+		fieldtypes
+		{
+			
+			sector
+			{
+				xscaleceiling = 1;
+				xscalefloor = 1;
+				user_managed_3d_floor = 3;
+				xpanningfloor = 1;
+				yscaleceiling = 1;
+				fogdensity = 0;
+				xpanningceiling = 1;
+				yscalefloor = 1;
+				rotationfloor = 1;
+				fadecolor = 0;
+				user_slopedatasector = 3;
+				rotationceiling = 1;
+				ypanningfloor = 1;
+				ypanningceiling = 1;
+			}
+			
+			sidedef
+			{
+				offsety_bottom = 1;
+				scaley_mid = 1;
+				offsetx_top = 1;
+				offsety_mid = 1;
+				scalex_mid = 1;
+				offsetx_bottom = 1;
+				offsetx_mid = 1;
+				offsety_top = 1;
+			}
+			
+			thing
+			{
+				conversation = 0;
+				fillcolor = 0;
+			}
+		}
+		overrideceilheight = false;
+		useresourcesinreadonlymode = false;
+		overridebrightness = false;
+		overridefloortexture = false;
+		
+		grid
+		{
+			backoffsetx = 0;
+			backsource = 0;
+			gridoriginy = 0;
+			backscaley = 100;
+			gridrotate = 0;
+			backscalex = 100;
+			gridoriginx = 0;
+			gridsize = 32;
+			background = "";
+			backoffsety = 0;
+		}
+		overridetoptexture = false;
+		overridebottomtexture = false;
+		defaultbottomtexture = "OBASEL33";
+		defaultfloortexture = "FLOOR0_3";
+		viewpositiony = -216.3683f;
+		defaultwalltexture = "OBASEL33";
+		customceilheight = 128;
+		overridemiddletexture = false;
+		custombrightness = 196;
+		viewscale = 0.0945003f;
+	}
+}

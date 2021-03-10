@@ -1,0 +1,111 @@
+type = "Doom Builder Map Settings Configuration";
+gameconfig = "GZDoom_DoomUDMF.cfg";
+strictpatches = 0;
+
+maps
+{
+	
+	MAP03
+	{
+		
+		resources
+		{
+			
+			resource0
+			{
+				type = 2;
+				location = "D:\\Games\\Doom\\GZDoom\\gzdoom.pk3";
+				option1 = 0;
+				option2 = 0;
+				notfortesting = 1;
+			}
+			
+			resource1
+			{
+				type = 0;
+				location = "D:\\Games\\Doom\\Doom2.wad";
+				option1 = 0;
+				option2 = 0;
+				notfortesting = 0;
+			}
+			
+			resource2
+			{
+				type = 1;
+				location = "D:\\Games\\Doom\\SGDoom";
+				option1 = 0;
+				option2 = 0;
+				notfortesting = 0;
+			}
+		}
+		defaultfloortexture = "OGRVLB01";
+		defaultceiltexture = "F_SKY1";
+		defaulttoptexture = "SGC0A0";
+		defaultwalltexture = "SGC0A0";
+		defaultbottomtexture = "SGC0A0";
+		custombrightness = 196;
+		customfloorheight = 0;
+		customceilheight = 128;
+		overridefloortexture = false;
+		overrideceiltexture = false;
+		overridetoptexture = false;
+		overridemiddletexture = false;
+		overridebottomtexture = false;
+		overridefloorheight = false;
+		overrideceilheight = false;
+		overridebrightness = false;
+		uselongtexturenames = false;
+		useresourcesinreadonlymode = true;
+		viewpositionx = 650.3096f;
+		viewpositiony = -128.33f;
+		viewscale = 0.2958565f;
+		scriptcompiler = "zdoom_acs.cfg";
+		
+		grid
+		{
+			background = "";
+			backsource = 0;
+			backoffsetx = 0;
+			backoffsety = 0;
+			backscalex = 100;
+			backscaley = 100;
+			gridsize = 32;
+			gridrotate = 0;
+			gridoriginx = 0;
+			gridoriginy = 0;
+		}
+		
+		fieldtypes
+		{
+			
+			sidedef
+			{
+				offsetx_mid = 1;
+				offsety_mid = 1;
+				scalex_mid = 1;
+				scaley_mid = 1;
+				offsetx_bottom = 1;
+				offsety_bottom = 1;
+			}
+			
+			sector
+			{
+				xpanningceiling = 1;
+				ypanningceiling = 1;
+				rotationceiling = 17;
+				xscaleceiling = 1;
+				yscaleceiling = 1;
+				xpanningfloor = 1;
+				ypanningfloor = 1;
+				rotationfloor = 17;
+				xscalefloor = 1;
+				yscalefloor = 1;
+			}
+			
+			thing
+			{
+				fillcolor = 0;
+			}
+		}
+	}
+}
