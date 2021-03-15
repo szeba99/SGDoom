@@ -56,9 +56,9 @@ maps
 		overridebrightness = false;
 		uselongtexturenames = false;
 		useresourcesinreadonlymode = true;
-		viewpositionx = 650.3096f;
-		viewpositiony = -128.33f;
-		viewscale = 0.2958565f;
+		viewpositionx = 1020.409f;
+		viewpositiony = -638.9569f;
+		viewscale = 0.2329803f;
 		scriptcompiler = "zdoom_acs.cfg";
 		
 		grid
@@ -75,6 +75,65 @@ maps
 			gridoriginy = 0;
 		}
 		
+		plugins
+		{
+			
+			stairsectorbuilder
+			{
+				
+				prefabs
+				{
+					
+					prefab1
+					{
+						name = "[Previous]";
+						numberofsectors = 14;
+						outervertexmultiplier = 1;
+						innervertexmultiplier = 1;
+						stairtype = 0;
+						sectordepth = 56;
+						spacing = 0;
+						frontside = true;
+						singlesectors = false;
+						distinctsectors = false;
+						singledirection = false;
+						distinctbaseheights = false;
+						flipping = 0;
+						numberofcontrolpoints = 1;
+						applyfloormod = true;
+						floormod = -24;
+						applyceilingmod = false;
+						ceilingmod = 0;
+						applyfloortexture = false;
+						floortexture = "";
+						applyceilingtexture = false;
+						ceilingtexture = "";
+						applyuppertexture = true;
+						uppertexture = "-";
+						upperunpegged = true;
+						applymiddletexture = false;
+						middletexture = "-";
+						applylowertexture = true;
+						lowertexture = "OFM_01_0";
+						lowerunpegged = true;
+					}
+				}
+			}
+			
+			threedfloormode
+			{
+				
+				controlsectorarea
+				{
+					usecustomtagrange = false;
+					outerleft = -512;
+					outerright = 0;
+					outertop = 512;
+					outerbottom = 0;
+				}
+			}
+		}
+		
 		fieldtypes
 		{
 			
@@ -86,10 +145,15 @@ maps
 				scaley_mid = 1;
 				offsetx_bottom = 1;
 				offsety_bottom = 1;
+				offsetx_top = 1;
+				light = 0;
+				offsety_top = 1;
 			}
 			
 			sector
 			{
+				fadecolor = 0;
+				fogdensity = 0;
 				xpanningceiling = 1;
 				ypanningceiling = 1;
 				rotationceiling = 17;
@@ -97,7 +161,7 @@ maps
 				yscaleceiling = 1;
 				xpanningfloor = 1;
 				ypanningfloor = 1;
-				rotationfloor = 17;
+				rotationfloor = 1;
 				xscalefloor = 1;
 				yscalefloor = 1;
 			}
@@ -105,6 +169,29 @@ maps
 			thing
 			{
 				fillcolor = 0;
+			}
+		}
+		
+		scriptdocuments
+		{
+			
+			document0
+			{
+				filename = "DIALOGUE";
+				hash = 3588187714;
+				resource;
+				tabtype = 0;
+				scripttype = 18;
+			}
+			
+			document1
+			{
+				filename = "SCRIPTS";
+				hash = 3469170009;
+				resource;
+				tabtype = 0;
+				scripttype = 1;
+				activetab = true;
 			}
 		}
 	}

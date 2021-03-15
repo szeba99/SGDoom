@@ -14,6 +14,9 @@ weapons/p90fire			P90FIRE
 weapons/release         CLPRELEA
 weapons/bolt			P90_BOLT
 
+tealc/rebel "sounds/tealcrebel.ogg"
+tealc/rebelhu "sounds/tealcrebel_hu.ogg"
+
 zat/shot "sounds/zat_shot1.mp3"
 ring/go "sounds/ring_transporter.mp3"
 

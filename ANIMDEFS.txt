@@ -1,0 +1,6 @@
+Texture	Optional	OCOMPA21	Range	OCOMPA28	Tics 3
+Texture	Optional	OCOMPA11	Range	OCOMPA18	Tics 3
+Texture	Optional	OCOMPA01	Range	OCOMPA08	Tics 3
+Texture	Optional	OCOMPA31	Range	OCOMPA38	Tics 3
+Texture	Optional	OCOMPA91	Range	OCOMPA9N	Tics 2
+Texture	Optional	OCOMPA90	Range	OCOMPA9G	Tics 2
